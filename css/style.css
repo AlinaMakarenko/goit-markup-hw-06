@@ -946,6 +946,14 @@ transition: background-color 250ms;
     
     
 }
+.modal-close-btn:hover,
+.modal-close-btn:focus,
+.modal-close-btn:active{
+  cursor: pointer;
+  fill: var(--main-color);
+}
+ 
+
 
 .portfolio-img{
   position: relative;
@@ -986,6 +994,7 @@ opacity: 0;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 12px;
+    margin-top: 0px;
 }
 .form-modal{
    display: flex;
@@ -1006,23 +1015,26 @@ opacity: 0;
 }
 .checkbox{
   position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: start;
-    padding-left: 36px;
-    padding-right: 11px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+
 .button-submit{
   display: block;
     padding: 10px 55px;
-    margin: 0;
+    margin: 0 auto;
     width: 200px;
     height: 50px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    text-align: center;
     cursor: pointer;
     color: var(--main-light);
     background: var(--main-color);
@@ -1031,7 +1043,12 @@ opacity: 0;
     border-radius: 4px;
     transition: background-color var(--btn-sh-duration) var(--timing-function);
 }
+.button-submit:hover,
+.button-submit:focus{
+  background-color: rgb(24, 140, 232);
+}
 .label{
+  display: flex;
   margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -1053,3 +1070,109 @@ padding-left: 42px;
     fill: var(--corporation-color);
     transition: fill var(--btn-sh-duration) var(--timing-function);
 }
+.input-comment{
+  font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+  padding: 12px 16px;
+    min-height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border var(--btn-sh-duration) var(--timing-function);
+}
+.visually-hidden{
+  position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+.link-checkbox{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+    color: var(--main-color);
+}
+.link-checkbox, .label-checkbox{
+font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.label-checkbox{
+  display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--scroll-text);
+}
+   .label-checkbox ::placeholder{
+     color: rgba(117, 117, 117, 0.5);
+
+   }
+   .label-checkbox.label-checkbox::before{
+     content: "";
+     display: inline-block;
+     width: 16px;
+     height: 15px;
+     margin-right: 7px;
+     border: 2px solid var(--corporation-color);
+     border-radius: 4px;
+   }
+   .label-checkbox:hover,
+   .label-checkbox:focus{
+     cursor: pointer;
+   }
+   .checkbox-input:hover + .label-checkbox::before,
+    .checkbox-input:focus + .label-checkbox::before{
+border: 2px solid var(--main-color);
+border-radius: 4px;
+    }
+    .checkbox-input:checked + .label-checkbox::before{
+      background-image: url(../images/);
+      background-color: var(--main-color);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      border: 2px solid rgba(33, 33, 33, 0);
+    }
+    .element:hover input,
+    .element:focus input{
+      outline: none;
+      cursor: pointer;
+      border: 1px solid var(--main-color);
+      border-radius: 4px;
+    }
+    .element{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .element:hover .modal-svg,
+.element:focus-within .modal-svg{
+  cursor: pointer;
+  fill: var(--main-color);
+}
+.input:hover,
+  .input:focus{
+outline: none;
+      cursor: pointer;
+      border: 1px solid var(--main-color);
+      border-radius: 4px;
+  }
+  .input-comment:hover,
+  .input-comment:focus{
+    outline: none;
+      cursor: pointer;
+      border: 1px solid var(--main-color);
+      border-radius: 4px;
+  }
+
+
+   
+
+
