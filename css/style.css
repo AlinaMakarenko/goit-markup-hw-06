@@ -930,10 +930,12 @@ transition: background-color 250ms;
 
 
 .modal-close-btn{
+  display: flex;
   position: absolute;
+  justify-content: center;
+  align-items: center;
   width: 30px;
     height: 30px;
-    background-image: url(../images/icon-modal/close-icon.svg);
     background-repeat: no-repeat;
     background-color: var(--main-light);
     background-position: center;
@@ -942,6 +944,7 @@ transition: background-color 250ms;
     cursor: pointer;
      top: 8px;
     left: 490px;
+    transition: fill var(--btn-sh-duration) var(--timing-function);
     
     
     
@@ -952,7 +955,10 @@ transition: background-color 250ms;
   cursor: pointer;
   fill: var(--main-color);
 }
- 
+ .modal-svg-close{
+   width: 18px;
+    height: 18px;
+ }
 
 
 .portfolio-img{
@@ -1133,7 +1139,7 @@ border: 2px solid var(--main-color);
 border-radius: 4px;
     }
     .checkbox-input:checked + .label-checkbox::before{
-      background-image: url(../images/);
+      background-image: url(../images/icon-modal/checkbox-icon/Vector.svg);
       background-color: var(--main-color);
       background-repeat: no-repeat;
       background-position: center;
@@ -1172,7 +1178,62 @@ outline: none;
       border-radius: 4px;
   }
 
+  .footer-mail{
+    margin-left: 93px;
+  }
+  .footer-mail-line{
+    display: flex;
+    
+  }
+  .mail-line{
+    margin-right: 12px;
+  }
+.input-mail{
+outline: none;
+    padding: 15px;
+    width: 358px;
+    height: 50px;
+    font-family: 'Roboto',sans-serif ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: var(--main-light-op-60);
+    background-color: var(--head-footer-background);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: border var(--btn-sh-duration) var(--timing-function);
+}
+.input-mail:hover, .input-mail:focus {
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    outline: none;
+}
+.footer-btn {
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    letter-spacing: 0.06em;
+    color: var(--main-light);
+    background-color: var(--main-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+}
 
-   
-
+   .footer-btn-icon {
+    fill: currentColor;
+   }
 
